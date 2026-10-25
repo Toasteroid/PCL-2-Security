@@ -1554,8 +1554,9 @@ PCL2 是一个由个人长期维护、服务大量玩家的开源项目。指出
 | `ModSecret下载链接.txt` | 上述源码的下载来源 |
 | [`tools/`](tools) | Mermaid 图表排版 / 校验脚本、TLS 回调实测工具 |
 | [`figures/`](figures) | 28 张流程图的渲染快照（`b01`–`b28`，与 `流程分析报告` 中的图一一对应） |
+| [**Releases · v2.13.0.1-analysis**](https://github.com/Toasteroid/PCL-2-Security/releases/tag/v2.13.0.1-analysis) | **分析产物包**（仓库外分发）：全量反编译源码 88,510 行、13 个内嵌程序集、便携 .NET SDK 8.0.426，附 SHA-256 与复现步骤 |
 
-**关于样本与反编译产物**：`Plain Craft Launcher 2.exe`（v2.13.0.1，5,645,824 B，SHA-256 `0ab0b28a93cc4d0754a9fa488b5939b5e092f0e5fb3f1e6550cc92a5d3f6577f`）及其反编译代码**未在本仓库分发**，报告中仅保留文件偏移 / 行号 / 代码摘录，供官方按同版本样本复现核验。
+**关于样本与反编译产物**：`Plain Craft Launcher 2.exe`（v2.13.0.1，5,645,824 B，SHA-256 `0ab0b28a93cc4d0754a9fa488b5939b5e092f0e5fb3f1e6550cc92a5d3f6577f`）本体**不在本仓库分发**（第三方闭源软件）；其派生分析产物以 Release 附件形式提供 → [`v2.13.0.1-analysis`](https://github.com/Toasteroid/PCL-2-Security/releases/tag/v2.13.0.1-analysis)。报告中所有「`…cs:行号`」锚点均可在该包的 `decomp/Plain Craft Launcher 2.decompiled.cs` 中直接定位。
 
 ---
 
